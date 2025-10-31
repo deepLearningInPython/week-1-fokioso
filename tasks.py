@@ -53,10 +53,7 @@ print(ReLu(test_array))
 # -----------------------------------------------
 
 def neural_net_layer(X, weights, cutoff=0):
-
     result = np.dot(X, weights)
-
-    
     return ReLu(result, cutoff)
 
 X = np.array([[1, 2, 3],
@@ -67,4 +64,3 @@ weights = np.array([0.5, -1, 2])
 
 output = neural_net_layer(X, weights)
 print("Neural net layer output:", output)
-# ------------------------------------------
