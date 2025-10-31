@@ -32,13 +32,13 @@ print(step(9))
 
 # Your code here:
 # -----------------------------------------------
-def ReLu(array, cutoff = 0):
+def ReLU(array, cutoff = 0):
     array = np.array(array)
     array[array < cutoff] = cutoff
     return array
 
-test_array = np.array([-5, -1, 0, 3, 7])
-print(ReLu(test_array))
+test_array = np.array([])
+print(ReLU(test_array,cutoff= 2))
 # -----------------------------------------------
 
 
