@@ -54,7 +54,7 @@ print(ReLU(test_array,cutoff= 2))
 
 def neural_net_layer(X, weights, cutoff=0):
     result = np.dot(X, weights)
-    return ReLu(result, cutoff)
+    return ReLU(result, cutoff)
 
 X = np.array([[1, 2, 3],
               [4, 5, 6],
