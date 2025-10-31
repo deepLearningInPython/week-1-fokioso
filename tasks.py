@@ -32,13 +32,13 @@ print(step(9))
 
 # Your code here:
 # -----------------------------------------------
-def ReLU(array, cutoff = 0):
+def ReLu(array, cutoff = 0):
     array = np.array(array)
     array[array < cutoff] = cutoff
     return array
 
 test_array = np.array([])
-print(ReLU(test_array,cutoff= 2))
+print(ReLu(test_array,cutoff= 2))
 # -----------------------------------------------
 
 
@@ -54,7 +54,7 @@ print(ReLU(test_array,cutoff= 2))
 
 def neural_net_layer(X, weights, cutoff=0):
     result = np.dot(X, weights)
-    return ReLU(result, cutoff)
+    return ReLu(result, cutoff)
 
 X = np.array([[1, 2, 3],
               [4, 5, 6],
